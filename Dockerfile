@@ -24,4 +24,4 @@ RUN dashing new $dashdir
 COPY ./dashing/ $dashdir
 
 # run dashing (apply custom settings)
-CMD sed "s/%AUTH_TOKEN%/${TOKEN}/" config.ru && sed "s/%DEF_DASH%/${DASHBOARD}/" config.ru && dashing start -p $PORT
+CMD sed -i "s/%AUTH_TOKEN%/${TOKEN}/" config.ru && sed -i "s/%DEF_DASH%/${DASHBOARD}/" config.ru && dashing start -p $PORT

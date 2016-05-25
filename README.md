@@ -14,7 +14,7 @@ You can add your own dashboard by simply copy the .rb file in the dashing/dashbo
 
 ## How to use it (Aka how to build my own image)
 
-    git clone
+    git clone https://github.com/Oxalide/docker-dashing.git
     cd docker-dashing
     cp ../../myawesomedash.rb dashing/dashboards/
     cp ../../repeatforallyoudash.rb dashing/dashboards/
